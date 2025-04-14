@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Planner - Organización de Eventos</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- OPEN GRAPH -->
+    <meta property="og:title" content="Global Planner">
+    <meta property="og:description" content="ORGANIZACIÓN, COORDINACIÓN Y LOGÍSTICA DE TODO TIPO DE EVENTOS SOCIALES, CORPORATIVOS, PÚBLICOS Y PRIVADOS">
+    <meta property="og:image" content="https://www.globalplanner.mx/images/logo2.jpeg">
+    <meta property="og:url" content="https://www.globalplanner.mx/">
+    <meta property="og:type" content="website">
+    <script src="servicios.js"></script>
+    <link rel="icon" href="/img/logo.png">
+
+</head>
+
+<body class="bg-white text-gray-900 font-[Montserrat]">
+
+    <!-- Header -->
+<header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <!-- Logo -->
+      <a href="/" class="flex items-center">
+        <img src="/img/logo.png" alt="Global Planner" class="h-20">
+      </a>
+  
+      <nav class="hidden md:flex items-center gap-6 text-base">
+        <a href="#quienes-somos" class="hover:text-yellow-600">¿Quiénes Somos?</a>
+        <a href="#servicios" class="block py-2 border-b">Servicios</a>
+        <a href="#contacto" class="hover:text-yellow-600">Contacto</a>
+      </nav>
+  
+      <button class="md:hidden text-yellow-600 text-2xl" id="menu-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  
+    <div class="hidden md:hidden px-4 pb-4" id="mobile-menu">
+      <a href="#quienes-somos" class="block py-2 border-b">¿Quiénes Somos?</a>
+      <a href="#servicios" class="block py-2 border-b">Servicios</a>
+      <a href="#contacto" class="block py-2 border-b">Contacto</a>
+    </div>
+  </header>
+  
+  
+
+    <!-- Hero Section -->
+<section id="hero" class="relative h-[90vh] bg-cover bg-center" style="background-image: url('/img/image.jpg');">
+    <!-- Overlay dorado suave -->
+    <div class="absolute inset-0 bg-yellow-900 bg-opacity-50"></div>
+  
+    <!-- Contenido -->
+    <div class="relative z-10 flex items-center justify-center h-full">
+      <div class="text-center max-w-3xl px-4">
+        <h2 class="text-4xl md:text-5xl font-bold text-white drop-shadow-lg mb-6">
+          Eventos sociales, empresariales, públicos, masivos y privados
+        </h2>
+        <p class="text-white text-lg md:text-xl leading-relaxed drop-shadow-md">
+          Bodas, XV Años, Graduaciones, Entrega de documentos, Aniversarios, Bautizos, Expos, Conciertos, Inauguraciones, Obras teatrales, Ferias, Posadas, Congresos, Convenciones, Cumpleaños, Fiestas infantiles, Pasarelas, etc.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+<!-- Quienes Somos Section -->
+<section id="quienes-somos" class="bg-white py-16">
+    <div class="container mx-auto px-4">
+      <!-- Título -->
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-gray-800 mb-2">¿Quiénes Somos?</h2>
+        <div class="w-24 h-1 bg-yellow-500 mx-auto rounded"></div>
+      </div>
+  
+      <!-- Texto + Imagen -->
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div class="space-y-4 text-gray-700 text-lg md:text-xl">
+          <p>
+            Somos una empresa especializada en la Organización, Coordinación y Logística de eventos sociales y corporativos.
+          </p> <br><br><br>
+          <p>
+            Con más de 25 años de experiencia, hemos logrado satisfacer a nuestros clientes brindando ideas innovadoras a la medida de sus expectativas.
+          </p><br><br><br>
+          <p>
+            Nuestro equipo desarrolla la coordinación y logística necesarias para lograr resultados exitosos, bajo supervisión de profesionales calificados.
+          </p>
+        </div>
+  
+        <!-- Imagen más pequeña -->
+        <div class="flex justify-center">
+          <img src="/img/image1.jpg" alt="Organización de eventos"
+            class="w-3/4 md:w-4/5 lg:w-3/4 rounded-lg shadow-lg object-cover">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Misión y Visión -->
+<div class="mt-10 max-w-6xl mx-auto px-4">
+    <!-- Título -->
+    <div class="text-center mb-8">
+      <h3 class="text-2xl font-bold text-gray-800 mb-2">Misión y Visión</h3>
+      <div class="w-16 h-1 bg-yellow-500 mx-auto rounded"></div>
+    </div>
+  
+    <!-- Tarjetas -->
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="bg-gray-50 rounded-xl p-6 shadow-md hover:shadow-lg transition">
+        <h4 class="text-lg font-semibold text-yellow-600 mb-2">Misión</h4>
+        <p class="text-gray-600 text-base leading-relaxed">
+          Ofrecer soluciones ideales para eventos, con calidad y precio justo, cumpliendo sueños, ideas y expectativas.
+        </p>
+      </div>
+      <div class="bg-gray-50 rounded-xl p-6 shadow-md hover:shadow-lg transition">
+        <h4 class="text-lg font-semibold text-yellow-600 mb-2">Visión</h4>
+        <p class="text-gray-600 text-base leading-relaxed">
+          Crear, Innovar, Crecer, Evolucionar, Expandirse y Trascender.
+        </p>
+      </div>
+    </div>
+  </div>
+<!-- Valores Section -->
+<section id="valores" class="bg-gray-100 py-16">
+    <div class="max-w-7xl mx-auto px-4">
+      <!-- Título -->
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-gray-800 mb-2">Nuestros Valores</h2>
+        <div class="w-24 h-1 bg-yellow-500 mx-auto rounded"></div>
+      </div>
+  
+      <!-- Grid de valores -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <!-- Valor -->
+        <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition">
+          <div class="text-yellow-500 text-4xl mb-4">
+            <i class="fas fa-crown"></i>
+          </div>
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">Exclusividad</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Disfruta de tu evento con la garantía de que obtendrás el mejor servicio y podrás atender a tus invitados sin preocupaciones.
+          </p>
+        </div>
+  
+        <!-- Valor -->
+        <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition">
+          <div class="text-yellow-500 text-4xl mb-4">
+            <i class="fas fa-user-tie"></i>
+          </div>
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">Profesionalismo</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Recibe la mejor atención de manos de profesionales y demás personal capacitado.
+          </p>
+        </div>
+  
+        <!-- Valor -->
+        <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition">
+          <div class="text-yellow-500 text-4xl mb-4">
+            <i class="fas fa-star"></i>
+          </div>
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">Experiencia</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Obtén la tranquilidad y confianza que inspira nuestro equipo de producción con más de 25 años de experiencia.
+          </p>
+        </div>
+  
+        <!-- Valor -->
+        <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition">
+          <div class="text-yellow-500 text-4xl mb-4">
+            <i class="fas fa-award"></i>
+          </div>
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">Calidad</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Cada uno de los servicios ofrecidos por nuestra empresa te garantiza el excelente funcionamiento de tu evento.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="servicios" class="bg-dark py-16 px-4">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-black">Nuestros Servicios</h2>
+        <div class="w-20 h-1 bg-yellow-500 mx-auto mt-4"></div>
+      </div>
+  <br>
+      <div class="flex flex-col md:flex-row gap-6">
+        <!-- Tabs Navigation -->
+        <div class="md:w-1/4 overflow-x-auto md:overflow-visible whitespace-nowrap md:whitespace-normal border-b md:border-b-0 pb-4 md:pb-0 md:pr-4">
+          <div class="flex md:flex-col gap-2">
+            <button class="tab-btn active text-sm md:text-base bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600 transition" data-tab="coordinacion">Coordinación y Logística</button>
+            <button class="tab-btn text-sm md:text-base bg-gray-100 text-gray-700 px-4 py-2 rounded hover:bg-gray-200 transition" data-tab="salones">Salones y Jardines</button>
+            <button class="tab-btn text-sm md:text-base bg-gray-100 text-gray-700 px-4 py-2 rounded hover:bg-gray-200 transition" data-tab="artistas">Artistas y Shows</button>
+            <button class="tab-btn text-sm md:text-base bg-gray-100 text-gray-700 px-4 py-2 rounded hover:bg-gray-200 transition" data-tab="personal">Personal en General</button>
+            <button class="tab-btn text-sm md:text-base bg-gray-100 text-gray-700 px-4 py-2 rounded hover:bg-gray-200 transition" data-tab="audio">Equipo de Audio</button>
+            <button class="tab-btn text-sm md:text-base bg-gray-100 text-gray-700 px-4 py-2 rounded hover:bg-gray-200 transition" data-tab="video">Equipo de Video</button>
+            <button class="tab-btn text-sm md:text-base bg-gray-100 text-gray-700 px-4 py-2 rounded hover:bg-gray-200 transition" data-tab="iluminacion">Equipo de Iluminación</button>
+            <button class="tab-btn text-sm md:text-base bg-gray-100 text-gray-700 px-4 py-2 rounded hover:bg-gray-200 transition" data-tab="efectos">Efectos Especiales</button>
+            <button class="tab-btn text-sm md:text-base bg-gray-100 text-gray-700 px-4 py-2 rounded hover:bg-gray-200 transition" data-tab="mobiliario">Mobiliario</button>
+            <button class="tab-btn text-sm md:text-base bg-gray-100 text-gray-700 px-4 py-2 rounded hover:bg-gray-200 transition" data-tab="alimentos">Servicio de Alimentos</button>
+            <button class="tab-btn text-sm md:text-base bg-gray-100 text-gray-700 px-4 py-2 rounded hover:bg-gray-200 transition" data-tab="decoracion">Decoración</button>
+            <button class="tab-btn text-sm md:text-base bg-gray-100 text-gray-700 px-4 py-2 rounded hover:bg-gray-200 transition" data-tab="otros">Otros Servicios</button>
+          </div>
+        </div>
+  
+        <!-- Tabs Content -->
+        <div class="md:w-3/4">
+          <div class="tab-content active" id="coordinacion">
+            <h3 class="text-2xl font-semibold text-white mb-4">Coordinación y Logística</h3>
+            <p class="text-gray-800 leading-relaxed">
+              Nos especializamos en la planeación, organización y ejecución de eventos de principio a fin. Ya sea un evento social como bodas, XV años, graduaciones, o algo más corporativo o masivo como conciertos, expos o ferias, nos encargamos de cada detalle logístico: desde la calendarización y gestión de proveedores hasta la supervisión en tiempo real el día del evento. Nuestro equipo se asegura de que todo fluya según lo planeado, minimizando contratiempos y maximizando la experiencia de los asistentes. Somos ese engrane invisible que hace que todo funcione sin que tú tengas que preocuparte por nada. ¡Lo hacemos realidad por ti!
+            </p>
+          </div>
+  
+          <div class="tab-content hidden" id="salones">
+            <h3 class="text-2xl font-semibold text-white mb-4">Salones y Jardines</h3>
+            <p class="text-gray-800 leading-relaxed">
+              Ponemos a tu disposición una amplia variedad de salones, jardines y espacios para eventos en distintas zonas de la ciudad y alrededores. Gracias a nuestros convenios exclusivos, podemos ofrecerte lugares únicos, con diferentes capacidades, estilos y presupuestos. Ya sea que busques un lugar cerrado con aire acondicionado, o prefieras una locación al aire libre rodeada de naturaleza, tenemos la opción ideal para ti. Además, nos encargamos de la decoración, ambientación y logística del lugar para que solo llegues a disfrutar. ¡Tu evento, en el lugar perfecto!
+            </p>
+          </div>
+  
+          <div class="tab-content hidden" id="artistas">
+            <h3 class="text-2xl font-semibold text-white mb-4">Artistas y Shows</h3>
+            <p class="text-gray-800 leading-relaxed">
+              Damos vida a tu evento con un catálogo increíble de artistas y espectáculos. Desde DJs reconocidos y bandas en vivo hasta shows infantiles, comediantes, mimos, imitadores y más. Nos encargamos de toda la gestión: contacto, negociación, logística, sonido e iluminación del espectáculo. Tú sólo elige el tipo de ambiente que quieres y nosotros armamos el line-up perfecto para tu evento. Hacemos que cada presentación sea un momento inolvidable para tus invitados.
+            </p>
+          </div>
+  
+          <div class="tab-content hidden" id="personal">
+            <h3 class="text-2xl font-semibold text-white mb-4">Personal en General</h3>
+            <p class="text-gray-800 leading-relaxed">
+              Contamos con personal capacitado para cubrir todas las necesidades de tu evento. Desde seguridad profesional y control de accesos, hasta edecanes, hostess, traductores, personal de limpieza, meseros, cantineros y operadores de equipo técnico. Nos aseguramos de que cada persona en nuestro equipo esté uniformada, capacitada y comprometida con ofrecer un servicio amable, eficiente y profesional. Tu evento estará en buenas manos.
+            </p>
+          </div>
+  
+          <div class="tab-content hidden" id="audio">
+            <h3 class="text-2xl font-semibold text-white mb-4">Equipo de Audio</h3>
+            <p class="text-gray-800 leading-relaxed">
+              Ofrecemos sistemas de audio de alta fidelidad, adecuados para cualquier tipo de evento. Desde pequeños parlantes para ambientación suave, hasta arreglos lineales, monitores, subwoofers y consolas profesionales para grandes conciertos o presentaciones. Nuestro equipo técnico se encarga del montaje, prueba de sonido y monitoreo en vivo para asegurar una experiencia sonora impecable.
+            </p>
+          </div>
+  
+          <div class="tab-content hidden" id="video">
+            <h3 class="text-2xl font-semibold text-white mb-4">Equipo de Video</h3>
+            <p class="text-gray-800 leading-relaxed">
+              Pantallas LED gigantes, video muros, cámaras HD, drones, proyectores, circuitos cerrados, y todo lo necesario para capturar y proyectar cada instante de tu evento. También ofrecemos edición profesional y entrega en formatos digitales para conservar tu recuerdo con calidad cinematográfica. La tecnología a tu servicio.
+            </p>
+          </div>
+  
+          <div class="tab-content hidden" id="iluminacion">
+            <h3 class="text-2xl font-semibold text-white mb-4">Equipo de Iluminación</h3>
+            <p class="text-gray-800 leading-relaxed">
+              Creamos atmósferas con luces que transforman cualquier espacio. Contamos con cabezas móviles, iluminación arquitectónica, reflectores LED, lásers, iluminación ambiental e interactiva para espectáculos y ambientaciones. Combinamos diseño y tecnología para que cada rincón de tu evento brille con estilo y profesionalismo.
+            </p>
+          </div>
+  
+          <div class="tab-content hidden" id="efectos">
+            <h3 class="text-2xl font-semibold text-white mb-4">Efectos Especiales</h3>
+            <p class="text-gray-800 leading-relaxed">
+              Lluvia de confeti, humo, burbujas, flamas, nieve artificial, pirotecnia fría o aérea, todo con permisos vigentes y operado por técnicos certificados. Convertimos cada momento clave de tu evento en un espectáculo inolvidable. Ideal para entradas triunfales, primer baile o momentos cumbre. La magia está en los detalles.
+            </p>
+          </div>
+  
+          <div class="tab-content hidden" id="mobiliario">
+            <h3 class="text-2xl font-semibold text-white mb-4">Mobiliario</h3>
+            <p class="text-gray-800 leading-relaxed">
+              Desde lo básico hasta lo más exclusivo. Contamos con escenarios, pistas de baile, salas lounge, mesas redondas y rectangulares, sillas vestidas, pérgolas, toldos, barras de bebidas, cristalería, cubertería y más. Diseñamos y montamos el espacio perfecto según el estilo y necesidades de tu evento.
+            </p>
+          </div>
+  
+          <div class="tab-content hidden" id="alimentos">
+            <h3 class="text-2xl font-semibold text-white mb-4">Servicio de Alimentos</h3>
+            <p class="text-gray-800 leading-relaxed">
+              Ofrecemos banquetes gourmet, buffets temáticos, snacks, canapés, mesas de dulces, estaciones de postres, barras de bebidas, mixología en vivo y más. Trabajamos con chefs profesionales y mixólogos creativos para ofrecer sabores únicos, con presentaciones impecables y la máxima higiene. Tu evento será un deleite para todos los sentidos.
+            </p>
+          </div>
+  
+          <div class="tab-content hidden" id="decoracion">
+            <h3 class="text-2xl font-semibold text-white mb-4">Decoración</h3>
+            <p class="text-gray-800 leading-relaxed">
+              Creamos conceptos visuales desde cero o trabajamos con tu idea base para materializarla en un ambiente mágico. Floristería, globos, escenografías, iluminación ambiental, alfombras, letras gigantes, y más. Nuestro equipo de diseño se encargará de transformar tu espacio en una experiencia visual inolvidable.
+            </p>
+          </div>
+  
+          <div class="tab-content hidden" id="otros">
+            <h3 class="text-2xl font-semibold text-white mb-4">Otros Servicios</h3>
+            <p class="text-gray-800 leading-relaxed">
+              Todo lo que necesitas en un solo lugar. Desde generadores de luz, baños portátiles, gradas, calefactores, hasta servicios de transporte, confirmación de invitados, foto y video profesional, renta de inflables, viajes y más. Nos adaptamos a cualquier solicitud para que tu evento sea completo y sin complicaciones.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+
+    <!-- Testimonios Section -->
+    <section id="testimonios" class="section bg-dark" style="padding: 4rem 0;">
+        <div class="container" style="display: flex; flex-wrap: wrap; align-items: center;">
+          
+          <!-- Carrusel de imágenes -->
+          <div class="carousel-container" style="flex: 1; min-width: 300px; position: relative; overflow: hidden; max-width: 500px;background-color: #000; margin-right: 2rem;">
+            <div class="carousel-slides" style="display: flex; transition: transform 1s ease-in-out;">
+              <img src="/img/clientes/cliente1.png" alt="Cliente 1" style="width: 100%; flex-shrink: 0;">
+              <img src="/img/clientes/cliente2.png" alt="Cliente 2" style="width: 100%; flex-shrink: 0;">
+              <img src="/img/clientes/cliente3.png" alt="Cliente 3" style="width: 100%; flex-shrink: 0;">
+              <img src="/img/clientes/cliente4.png" alt="Cliente 4" style="width: 100%; flex-shrink: 0;">
+              <img src="/img/clientes/cliente5.png" alt="Cliente 5" style="width: 100%; flex-shrink: 0;">
+              <img src="/img/clientes/cliente6.png" alt="Cliente 6" style="width: 100%; flex-shrink: 0;">
+              <img src="/img/clientes/cliente7.png" alt="Cliente 7" style="width: 100%; flex-shrink: 0;">
+              <img src="/img/clientes/cliente8.png" alt="Cliente 8" style="width: 100%; flex-shrink: 0;">
+              <img src="/img/clientes/cliente9.png" alt="Cliente 9" style="width: 100%; flex-shrink: 0;">
+              <img src="/img/clientes/cliente10.png" alt="Cliente 10" style="width: 100%; flex-shrink: 0;">
+              <img src="/img/clientes/cliente11.png" alt="Cliente 11" style="width: 100%; flex-shrink: 0;">
+              <img src="/img/clientes/cliente12.png" alt="Cliente 12" style="width: 100%; flex-shrink: 0;">
+              <img src="/img/clientes/cliente13.png" alt="Cliente 13" style="width: 100%; flex-shrink: 0;">
+              <img src="/img/clientes/cliente14.png" alt="Cliente 14" style="width: 100%; flex-shrink: 0;">
+              <img src="/img/clientes/cliente15.png" alt="Cliente 15" style="width: 100%; flex-shrink: 0;">
+              <img src="/img/clientes/cliente16.png" alt="Cliente 16" style="width: 100%; flex-shrink: 0;">
+              <img src="/img/clientes/cliente17.png" alt="Cliente 17" style="width: 100%; flex-shrink: 0;">
+              <img src="/img/clientes/cliente18.png" alt="Cliente 18" style="width: 100%; flex-shrink: 0;">
+              <img src="/img/clientes/cliente19.png" alt="Cliente 19" style="width: 100%; flex-shrink: 0;">
+              <img src="/img/clientes/cliente20.png" alt="Cliente 20" style="width: 100%; flex-shrink: 0;">
+              <img src="/img/clientes/cliente21.png" alt="Cliente 21" style="width: 100%; flex-shrink: 0;">
+              <!-- Agrega más si tienes -->
+            </div>
+          </div>
+      
+          <!-- Opiniones -->
+          <div class="testimonios-texto" style="flex: 1; min-width: 300px;">
+            <div class="section-header">
+              <h2>Algunas opiniones de nuestros clientes</h2>
+              <div class="divider" style="height: 4px; width: 60px; background-color: #fff; margin-bottom: 2rem;"></div>
+            </div>
+            <div class="testimonials-slider">
+              <div class="testimonial-item active">
+                <p>"Lo primero que deseo destacar es la magnífica disposición y sensibilidad de la empresa hacia nuestros deseos y necesidades..."</p>
+              </div>
+              <br>
+              <div class="testimonial-item">
+                <p>"La selección musical fue acorde con nuestras expectativas y su intensidad, delicadamente regulada, nos permitió conversar cómodamente…"</p>
+              </div>
+              <br>
+              <div class="testimonial-item">
+                <p>"Los alimentos fueron servidos con toda oportunidad, presentados de manera adecuada y complacieron a todos los asistentes…"</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section id="contacto" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contacto</h2>
+                <div class="divider"></div>
+            </div>
+    
+            <div class="contact-content grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Información de contacto -->
+                <div class="space-y-6">
+                    <!-- Director -->
+                    <div class="flex items-start gap-4">
+                        <div class="text-gold text-2xl"><i class="fas fa-user"></i></div>
+                        <div>
+                            <h3 class="font-gold text-lg">Director</h3>
+                            <p class="text-gold">Carlos Vidal Medina Herrera</p>
+                        </div>
+                    </div>
+    
+                    <!-- Teléfono -->
+                    <div class="flex items-start gap-4">
+                        <div class="text-yellow-500 text-2xl"><i class="fas fa-phone"></i></div>
+                        <div>
+                            <h3 class="font-semibold text-lg text-gold">Teléfono</h3>
+                            <a href="tel:4493673193" class="contact-button">449 367 3193 y 94</a><br>
+                            <a href="tel:4493526094" class="contact-button">Cel. 449 352 6094</a>
+                        </div>
+                    </div>
+    
+                    <!-- Email -->
+                    <div class="flex items-start gap-4">
+                        <div class="text-yellow-500 text-2xl"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h3 class="font-semibold text-lg text-gold">Email</h3>
+                            <a href="mailto:mk@globalplanner.mx" class="contact-button">mk@globalplanner.mx</a>
+                        </div>
+                    </div>
+    
+                    <!-- Dirección -->
+                    <div class="flex items-start gap-4">
+                        <div class="text-gold text-2xl"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h3 class="font-gold text-lg">Dirección</h3>
+                            <p class="text-gold">Prol. Gral. Ignacio Zaragoza 607, Valle de las Trojes, Aguascalientes, Ags.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Mapa -->
+                <div class="contact-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3701.2197220630032!2d-102.304717!3d21.926103!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8429ef0642dfa6d3%3A0xa6a3448ef5cb126!2sProl.%20Gral.%20Ignacio%20Zaragoza%20607%2C%20Valle%20de%20las%20Trojes%2C%2020115%20Aguascalientes%2C%20Ags.!5e0!3m2!1ses-419!2smx!4v1744609907647!5m2!1ses-419!2smx" 
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+ <!-- Footer Section -->
+<footer id="footer" class="bg-black text-yellow-400 py-10">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
+        
+        <!-- Logo y descripción -->
+        <div class="space-y-2">
+          <a href="/" class="flex items-center">
+            <img src="/img/logo.png" alt="Global Planner" class="h-20">
+          </a>
+        </div>
+  
+        <!-- Enlaces rápidos -->
+        <div>
+          <h3 class="text-yellow-400 font-semibold mb-2">Navegación</h3>
+          <ul class="space-y-1 text-sm">
+            <li><a href="#quienes-somos" class="hover:text-white hover:underline transition-all duration-300">¿Quiénes Somos?</a></li>
+            <li><a href="#servicios" class="hover:text-white hover:underline transition-all duration-300">Servicios</a></li>
+            <li><a href="#cobertura" class="hover:text-white hover:underline transition-all duration-300">Cobertura</a></li>
+            <li><a href="#contacto" class="hover:text-white hover:underline transition-all duration-300">Contacto</a></li>
+          </ul>
+        </div>
+  
+        <!-- Redes sociales -->
+        <div>
+          <h3 class="text-yellow-400 font-semibold mb-2">Síguenos</h3> <br>
+          <div class="flex gap-4 text-xl">
+            <a href="https://www.facebook.com/globalplanner.mx" target="_blank" class="hover:text-white hover:scale-110 transform transition duration-300"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/globalplanner.mx" target="_blank" class="hover:text-white hover:scale-110 transform transition duration-300"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@globalplanner" target="_blank" class="hover:text-white hover:scale-110 transform transition duration-300"><i class="fab fa-youtube"></i></a>
+            <a href="https://wa.me/524493526094" target="_blank" class="hover:text-white hover:scale-110 transform transition duration-300" title="Chatea con nosotros por WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Línea divisoria -->
+      <div class="border-t border-gray-700 mt-10 pt-6 text-center text-sm text-gray-500">
+        <p>&copy; 2025 <span class="text-yellow-400">Global Planner</span>. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+  
+      <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+      
+        menuBtn.addEventListener("click", () => {
+          mobileMenu.classList.toggle("hidden");
+        });
+      </script>
+      
+    <script>
+        // Carrusel automático de imágenes
+        let slideIndex = 0;
+        const slidesContainer = document.querySelector('.carousel-slides');
+        const totalSlides = slidesContainer.children.length;
+        
+        function showNextSlide() {
+          slideIndex = (slideIndex + 1) % totalSlides;
+          slidesContainer.style.transform = `translateX(-${slideIndex * 100}%)`;
+        }
+        
+        setInterval(showNextSlide, 2000); // Cambia cada 2 segundos
+    </script>
+    <script>
+        const buttons = document.querySelectorAll('.tab-btn');
+        const contents = document.querySelectorAll('.tab-content');
+      
+        buttons.forEach(btn => {
+          btn.addEventListener('click', () => {
+            buttons.forEach(b => b.classList.remove('bg-yellow-500', 'text-white', 'active'));
+            btn.classList.add('bg-yellow-500', 'text-white', 'active');
+      
+            const tabId = btn.getAttribute('data-tab');
+            contents.forEach(c => c.classList.add('hidden'));
+            document.getElementById(tabId).classList.remove('hidden');
+          });
+        });
+      </script>
+      <script src="animacion.js"></script>
+      <script>
+        // Llamar a la animación al cargar la página
+        window.onload = animacionImpactante;
+      </script>
+    
+</body>
+</html>
