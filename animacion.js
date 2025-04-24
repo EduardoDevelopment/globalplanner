@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const elementos = Array.from(document.body.querySelectorAll("*")).filter(
       (el) => {
         const tag = el.tagName.toLowerCase();
-        const enCarrusel = el.closest(".carousel-container");
+        const enCarrusel = el.closest(".carousel");
         const enmenu = el.closest(".servicios");
         return (
           !["script", "style", "meta", "link", "head"].includes(tag) &&

@@ -32,7 +32,8 @@
   
       <nav class="hidden md:flex items-center gap-6 text-base">
         <a href="#quienes-somos" class="hover:text-yellow-600">¿Quiénes Somos?</a>
-        <a href="#servicios" class="block py-2 border-b">Servicios</a>
+        <a href="#servicios" class="hover:text-yellow-600">Servicios</a>
+        <a href="#paquetes" class="hover:text-yellow-600">Paquetes</a>
         <a href="#contacto" class="hover:text-yellow-600">Contacto</a>
       </nav>
   
@@ -44,6 +45,7 @@
     <div class="hidden md:hidden px-4 pb-4" id="mobile-menu">
       <a href="#quienes-somos" class="block py-2 border-b">¿Quiénes Somos?</a>
       <a href="#servicios" class="block py-2 border-b">Servicios</a>
+      <a href="#paquetes" class="block py-2 border-b">Paquetes</a>
       <a href="#contacto" class="block py-2 border-b">Contacto</a>
     </div>
   </header>
@@ -187,117 +189,541 @@
         <h2 class="text-3xl font-bold text-black">Nuestros Servicios</h2>
         <div class="w-20 h-1 bg-yellow-500 mx-auto mt-4"></div>
       </div>
-  <br>
+      <br>
       <div class="flex flex-col md:flex-row gap-6">
         <!-- Tabs Navigation -->
         <div class="md:w-1/4 overflow-x-auto md:overflow-visible whitespace-nowrap md:whitespace-normal border-b md:border-b-0 pb-4 md:pb-0 md:pr-4">
           <div class="flex md:flex-col gap-2">
-            <button class="tab-btn active text-sm md:text-base bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600 transition" data-tab="coordinacion">Coordinación y Logística</button>
-            <button class="tab-btn text-sm md:text-base bg-gray-100 text-gray-700 px-4 py-2 rounded hover:bg-gray-200 transition" data-tab="salones">Salones y Jardines</button>
-            <button class="tab-btn text-sm md:text-base bg-gray-100 text-gray-700 px-4 py-2 rounded hover:bg-gray-200 transition" data-tab="artistas">Artistas y Shows</button>
-            <button class="tab-btn text-sm md:text-base bg-gray-100 text-gray-700 px-4 py-2 rounded hover:bg-gray-200 transition" data-tab="personal">Personal en General</button>
-            <button class="tab-btn text-sm md:text-base bg-gray-100 text-gray-700 px-4 py-2 rounded hover:bg-gray-200 transition" data-tab="audio">Equipo de Audio</button>
-            <button class="tab-btn text-sm md:text-base bg-gray-100 text-gray-700 px-4 py-2 rounded hover:bg-gray-200 transition" data-tab="video">Equipo de Video</button>
-            <button class="tab-btn text-sm md:text-base bg-gray-100 text-gray-700 px-4 py-2 rounded hover:bg-gray-200 transition" data-tab="iluminacion">Equipo de Iluminación</button>
-            <button class="tab-btn text-sm md:text-base bg-gray-100 text-gray-700 px-4 py-2 rounded hover:bg-gray-200 transition" data-tab="efectos">Efectos Especiales</button>
-            <button class="tab-btn text-sm md:text-base bg-gray-100 text-gray-700 px-4 py-2 rounded hover:bg-gray-200 transition" data-tab="mobiliario">Mobiliario</button>
-            <button class="tab-btn text-sm md:text-base bg-gray-100 text-gray-700 px-4 py-2 rounded hover:bg-gray-200 transition" data-tab="alimentos">Servicio de Alimentos</button>
+            <button class="tab-btn active text-sm md:text-base bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600 transition" data-tab="iluminacion">Iluminación</button>
+            <button class="tab-btn text-sm md:text-base bg-gray-100 text-gray-700 px-4 py-2 rounded hover:bg-gray-200 transition" data-tab="video">Video</button>
+            <button class="tab-btn text-sm md:text-base bg-gray-100 text-gray-700 px-4 py-2 rounded hover:bg-gray-200 transition" data-tab="pistas">Pistas</button>
+            <button class="tab-btn text-sm md:text-base bg-gray-100 text-gray-700 px-4 py-2 rounded hover:bg-gray-200 transition" data-tab="escenarios">Escenarios</button>
+            <button class="tab-btn text-sm md:text-base bg-gray-100 text-gray-700 px-4 py-2 rounded hover:bg-gray-200 transition" data-tab="pasarelas">Pasarelas</button>
             <button class="tab-btn text-sm md:text-base bg-gray-100 text-gray-700 px-4 py-2 rounded hover:bg-gray-200 transition" data-tab="decoracion">Decoración</button>
-            <button class="tab-btn text-sm md:text-base bg-gray-100 text-gray-700 px-4 py-2 rounded hover:bg-gray-200 transition" data-tab="otros">Otros Servicios</button>
+            <button class="tab-btn text-sm md:text-base bg-gray-100 text-gray-700 px-4 py-2 rounded hover:bg-gray-200 transition" data-tab="escenografias">Escenografías</button>
+            <button class="tab-btn text-sm md:text-base bg-gray-100 text-gray-700 px-4 py-2 rounded hover:bg-gray-200 transition" data-tab="plantas">Plantas de Luz</button>
+            <button class="tab-btn text-sm md:text-base bg-gray-100 text-gray-700 px-4 py-2 rounded hover:bg-gray-200 transition" data-tab="reflectores">Reflectores Antiaéreos</button>
+            <button class="tab-btn text-sm md:text-base bg-gray-100 text-gray-700 px-4 py-2 rounded hover:bg-gray-200 transition" data-tab="laser">Espectáculo Laser</button>
+            <button class="tab-btn text-sm md:text-base bg-gray-100 text-gray-700 px-4 py-2 rounded hover:bg-gray-200 transition" data-tab="cabinas">Cabinas para DJ</button>
+            <button class="tab-btn text-sm md:text-base bg-gray-100 text-gray-700 px-4 py-2 rounded hover:bg-gray-200 transition" data-tab="audio">Audio</button>
+            <button class="tab-btn text-sm md:text-base bg-gray-100 text-gray-700 px-4 py-2 rounded hover:bg-gray-200 transition" data-tab="pirotecnia">Pirotecnia</button>
+            <button class="tab-btn text-sm md:text-base bg-gray-100 text-gray-700 px-4 py-2 rounded hover:bg-gray-200 transition" data-tab="flamas">Flamas y Jet's</button>
+            <button class="tab-btn text-sm md:text-base bg-gray-100 text-gray-700 px-4 py-2 rounded hover:bg-gray-200 transition" data-tab="confeti">Cañones de confeti</button>
+            <button class="tab-btn text-sm md:text-base bg-gray-100 text-gray-700 px-4 py-2 rounded hover:bg-gray-200 transition" data-tab="burbujas">Máquinas de burbujas</button>
+            <button class="tab-btn text-sm md:text-base bg-gray-100 text-gray-700 px-4 py-2 rounded hover:bg-gray-200 transition" data-tab="skydancer">Sky Dancer</button>
+            <button class="tab-btn text-sm md:text-base bg-gray-100 text-gray-700 px-4 py-2 rounded hover:bg-gray-200 transition" data-tab="espuma">Máquinas y cañones de espuma</button>
+            <button class="tab-btn text-sm md:text-base bg-gray-100 text-gray-700 px-4 py-2 rounded hover:bg-gray-200 transition" data-tab="backline">Backline</button>
+            <button class="tab-btn text-sm md:text-base bg-gray-100 text-gray-700 px-4 py-2 rounded hover:bg-gray-200 transition" data-tab="iluminacion-arq">Iluminación arquitectónica</button>
+            <button class="tab-btn text-sm md:text-base bg-gray-100 text-gray-700 px-4 py-2 rounded hover:bg-gray-200 transition" data-tab="iluminacion-negra">Iluminación negra</button>
           </div>
         </div>
   
         <!-- Tabs Content -->
         <div class="md:w-3/4">
-          <div class="tab-content active" id="coordinacion">
-            <h3 class="text-2xl font-semibold text-white mb-4">Coordinación y Logística</h3>
+          <div class="tab-content active" id="iluminacion">
+            <h3 class="text-2xl font-semibold text-white mb-4">Iluminación</h3>
             <p class="text-gray-800 leading-relaxed">
-              Nos especializamos en la planeación, organización y ejecución de eventos de principio a fin. Ya sea un evento social como bodas, XV años, graduaciones, o algo más corporativo o masivo como conciertos, expos o ferias, nos encargamos de cada detalle logístico: desde la calendarización y gestión de proveedores hasta la supervisión en tiempo real el día del evento. Nuestro equipo se asegura de que todo fluya según lo planeado, minimizando contratiempos y maximizando la experiencia de los asistentes. Somos ese engrane invisible que hace que todo funcione sin que tú tengas que preocuparte por nada. ¡Lo hacemos realidad por ti!
+              En las marcas Líderes en el mercado: HIGH END, ROBE, VARI LITE.<br>
+              Convencional: Par 64 Leds, Fresnel y Lyco con cortadoras.<br>
+              Robotics: Wash, Spot, Beem en las Marcas HIGH END, ROBE, VARI LITE.<br>
+              Seguidores: DTS 575 y 1200 de descarga.
             </p>
-          </div>
-  
-          <div class="tab-content hidden" id="salones">
-            <h3 class="text-2xl font-semibold text-white mb-4">Salones y Jardines</h3>
-            <p class="text-gray-800 leading-relaxed">
-              Ponemos a tu disposición una amplia variedad de salones, jardines y espacios para eventos en distintas zonas de la ciudad y alrededores. Gracias a nuestros convenios exclusivos, podemos ofrecerte lugares únicos, con diferentes capacidades, estilos y presupuestos. Ya sea que busques un lugar cerrado con aire acondicionado, o prefieras una locación al aire libre rodeada de naturaleza, tenemos la opción ideal para ti. Además, nos encargamos de la decoración, ambientación y logística del lugar para que solo llegues a disfrutar. ¡Tu evento, en el lugar perfecto!
-            </p>
-          </div>
-  
-          <div class="tab-content hidden" id="artistas">
-            <h3 class="text-2xl font-semibold text-white mb-4">Artistas y Shows</h3>
-            <p class="text-gray-800 leading-relaxed">
-              Damos vida a tu evento con un catálogo increíble de artistas y espectáculos. Desde DJs reconocidos y bandas en vivo hasta shows infantiles, comediantes, mimos, imitadores y más. Nos encargamos de toda la gestión: contacto, negociación, logística, sonido e iluminación del espectáculo. Tú sólo elige el tipo de ambiente que quieres y nosotros armamos el line-up perfecto para tu evento. Hacemos que cada presentación sea un momento inolvidable para tus invitados.
-            </p>
-          </div>
-  
-          <div class="tab-content hidden" id="personal">
-            <h3 class="text-2xl font-semibold text-white mb-4">Personal en General</h3>
-            <p class="text-gray-800 leading-relaxed">
-              Contamos con personal capacitado para cubrir todas las necesidades de tu evento. Desde seguridad profesional y control de accesos, hasta edecanes, hostess, traductores, personal de limpieza, meseros, cantineros y operadores de equipo técnico. Nos aseguramos de que cada persona en nuestro equipo esté uniformada, capacitada y comprometida con ofrecer un servicio amable, eficiente y profesional. Tu evento estará en buenas manos.
-            </p>
-          </div>
-  
-          <div class="tab-content hidden" id="audio">
-            <h3 class="text-2xl font-semibold text-white mb-4">Equipo de Audio</h3>
-            <p class="text-gray-800 leading-relaxed">
-              Ofrecemos sistemas de audio de alta fidelidad, adecuados para cualquier tipo de evento. Desde pequeños parlantes para ambientación suave, hasta arreglos lineales, monitores, subwoofers y consolas profesionales para grandes conciertos o presentaciones. Nuestro equipo técnico se encarga del montaje, prueba de sonido y monitoreo en vivo para asegurar una experiencia sonora impecable.
-            </p>
+            <div class="carousel relative mt-6 rounded-lg overflow-hidden">
+              <div class="carousel-inner flex transition-transform duration-500">
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/iluminacion1.jpg" alt="Iluminación 1" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/iluminacion2.jpg" alt="Iluminación 2" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/iluminacion3.jpg" alt="Iluminación 3" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+                
+              </div>
+            </div>
           </div>
   
           <div class="tab-content hidden" id="video">
-            <h3 class="text-2xl font-semibold text-white mb-4">Equipo de Video</h3>
+            <h3 class="text-2xl font-semibold text-white mb-4">Video</h3>
             <p class="text-gray-800 leading-relaxed">
-              Pantallas LED gigantes, video muros, cámaras HD, drones, proyectores, circuitos cerrados, y todo lo necesario para capturar y proyectar cada instante de tu evento. También ofrecemos edición profesional y entrega en formatos digitales para conservar tu recuerdo con calidad cinematográfica. La tecnología a tu servicio.
+              Pantallas de Leds 6mm, 4mm y 2mm con cualquier medida y diseño.<br>
+              Pantallas de Proyección y Proyectores profesionales de 4,000 lúmenes a 18,000 lúmenes.<br>
+              Video Muros y Monitores 42", 55", 65", 75" y 80".<br>
+              Circuito Cerrado de 01 hasta 10 cámaras profesionales.
             </p>
+            <div class="carousel relative mt-6 rounded-lg overflow-hidden">
+              <div class="carousel-inner flex transition-transform duration-500">
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/video1.jpg" alt="Iluminación 1" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/video2.jpg" alt="Iluminación 2" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/video3.jpg" alt="Iluminación 3" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+                
+              </div>
+            </div>
           </div>
   
-          <div class="tab-content hidden" id="iluminacion">
-            <h3 class="text-2xl font-semibold text-white mb-4">Equipo de Iluminación</h3>
+          <div class="tab-content hidden" id="pistas">
+            <h3 class="text-2xl font-semibold text-white mb-4">Pistas</h3>
             <p class="text-gray-800 leading-relaxed">
-              Creamos atmósferas con luces que transforman cualquier espacio. Contamos con cabezas móviles, iluminación arquitectónica, reflectores LED, lásers, iluminación ambiental e interactiva para espectáculos y ambientaciones. Combinamos diseño y tecnología para que cada rincón de tu evento brille con estilo y profesionalismo.
+              Marca TOP LINE con acabados en plastificado y charol en infinidad de colores.<br>
+              Estampadas con diseños personalizados.<br>
+              Vidrio, Acrílico Iluminadas, Duela, madera rústica.<br>
+              Manejamos cualquier medida y diseño.
             </p>
+            <div class="carousel relative mt-6 rounded-lg overflow-hidden">
+              <div class="carousel-inner flex transition-transform duration-500">
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/pistas1.jpg" alt="Iluminación 1" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/pistas2.jpg" alt="Iluminación 2" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/pistas3.jpg" alt="Iluminación 3" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+                
+              </div>
+            </div>
           </div>
   
-          <div class="tab-content hidden" id="efectos">
-            <h3 class="text-2xl font-semibold text-white mb-4">Efectos Especiales</h3>
+          <div class="tab-content hidden" id="escenarios">
+            <h3 class="text-2xl font-semibold text-white mb-4">Escenarios</h3>
             <p class="text-gray-800 leading-relaxed">
-              Lluvia de confeti, humo, burbujas, flamas, nieve artificial, pirotecnia fría o aérea, todo con permisos vigentes y operado por técnicos certificados. Convertimos cada momento clave de tu evento en un espectáculo inolvidable. Ideal para entradas triunfales, primer baile o momentos cumbre. La magia está en los detalles.
+              Marca TOP LINE alturas de 0.30 hasta 1.6m con faldón o talud.<br>
+              Acabados en plastificado, charol en infinidad de colores o Estampados.<br>
+              Manejamos cualquier medida y diseño, contamos con barandal de seguridad.<br>
+              Vidrio y Acrílico Iluminados, Duela, Alfombrados, Madera rústica.
             </p>
+            <div class="carousel relative mt-6 rounded-lg overflow-hidden">
+              <div class="carousel-inner flex transition-transform duration-500">
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/escenarios1.jpg" alt="Iluminación 1" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/escenarios2.jpg" alt="Iluminación 2" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/escenarios3.jpg" alt="Iluminación 3" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+                
+              </div>
+            </div>
           </div>
   
-          <div class="tab-content hidden" id="mobiliario">
-            <h3 class="text-2xl font-semibold text-white mb-4">Mobiliario</h3>
+          <div class="tab-content hidden" id="pasarelas">
+            <h3 class="text-2xl font-semibold text-white mb-4">Pasarelas</h3>
             <p class="text-gray-800 leading-relaxed">
-              Desde lo básico hasta lo más exclusivo. Contamos con escenarios, pistas de baile, salas lounge, mesas redondas y rectangulares, sillas vestidas, pérgolas, toldos, barras de bebidas, cristalería, cubertería y más. Diseñamos y montamos el espacio perfecto según el estilo y necesidades de tu evento.
+              Marca TOP LINE con acabados en plastificado y charol en infinidad de colores.<br>
+              Estampadas con diseños personalizados.<br>
+              Vidrio, Acrílico Iluminadas, Duela, madera rústica.<br>
+              Manejamos cualquier medida y diseño.
             </p>
-          </div>
-  
-          <div class="tab-content hidden" id="alimentos">
-            <h3 class="text-2xl font-semibold text-white mb-4">Servicio de Alimentos</h3>
-            <p class="text-gray-800 leading-relaxed">
-              Ofrecemos banquetes gourmet, buffets temáticos, snacks, canapés, mesas de dulces, estaciones de postres, barras de bebidas, mixología en vivo y más. Trabajamos con chefs profesionales y mixólogos creativos para ofrecer sabores únicos, con presentaciones impecables y la máxima higiene. Tu evento será un deleite para todos los sentidos.
-            </p>
+            <div class="carousel relative mt-6 rounded-lg overflow-hidden">
+              <div class="carousel-inner flex transition-transform duration-500">
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/pasarelas1.jpg" alt="Iluminación 1" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/pasarelas2.jpg" alt="Iluminación 2" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/pasarelas3.jpg" alt="Iluminación 3" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+                
+              </div>
+            </div>
           </div>
   
           <div class="tab-content hidden" id="decoracion">
             <h3 class="text-2xl font-semibold text-white mb-4">Decoración</h3>
             <p class="text-gray-800 leading-relaxed">
-              Creamos conceptos visuales desde cero o trabajamos con tu idea base para materializarla en un ambiente mágico. Floristería, globos, escenografías, iluminación ambiental, alfombras, letras gigantes, y más. Nuestro equipo de diseño se encargará de transformar tu espacio en una experiencia visual inolvidable.
+              Centros de mesa, arreglos florales.<br>
+              Fiestas Tema.<br>
+              Candiles, encortinados, mamparas.<br>
+              Mesas de novios.<br>
+              Cubrimos cualquier diseño que te imagines.
             </p>
+            <div class="carousel relative mt-6 rounded-lg overflow-hidden">
+              <div class="carousel-inner flex transition-transform duration-500">
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/decoracion1.jpg" alt="Iluminación 1" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/decoracion2.jpg" alt="Iluminación 2" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/decoracion3.jpg" alt="Iluminación 3" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+                
+              </div>
+            </div>
           </div>
   
-          <div class="tab-content hidden" id="otros">
-            <h3 class="text-2xl font-semibold text-white mb-4">Otros Servicios</h3>
+          <div class="tab-content hidden" id="escenografias">
+            <h3 class="text-2xl font-semibold text-white mb-4">Escenografías</h3>
             <p class="text-gray-800 leading-relaxed">
-              Todo lo que necesitas en un solo lugar. Desde generadores de luz, baños portátiles, gradas, calefactores, hasta servicios de transporte, confirmación de invitados, foto y video profesional, renta de inflables, viajes y más. Nos adaptamos a cualquier solicitud para que tu evento sea completo y sin complicaciones.
+              En Lona impresa con calidad fotográfica.<br>
+              Escenografías Translucidas, Muros verdes.<br>
+              Contamos con todos las estructuras y accesorios para su instalación.<br>
+              Cubrimos cualquier diseño.
             </p>
+            <div class="carousel relative mt-6 rounded-lg overflow-hidden">
+              <div class="carousel-inner flex transition-transform duration-500">
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/escenografias1.jpg" alt="Iluminación 1" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/escenarios2.jpg" alt="Iluminación 2" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/escenografias3.jpg" alt="Iluminación 3" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+                
+              </div>
+            </div>
+          </div>
+  
+          <div class="tab-content hidden" id="plantas">
+            <h3 class="text-2xl font-semibold text-white mb-4">Plantas de Luz</h3>
+            <p class="text-gray-800 leading-relaxed">
+              Generadores de energía profesionales de Gasolina y Diésel.<br>
+              Capacidad de 5kva hasta 200kva.<br>
+              Instalados en cajas acústicas.<br>
+              Incluyen centro de Carga cableado y todos los accesorios necesarios para su operación.
+            </p>
+            <div class="carousel relative mt-6 rounded-lg overflow-hidden">
+              <div class="carousel-inner flex transition-transform duration-500">
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/plantas_luz1.jpg" alt="Iluminación 1" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/plantas_luz2.jpg" alt="Iluminación 2" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="tab-content hidden" id="reflectores">
+            <h3 class="text-2xl font-semibold text-white mb-4">Reflectores Antiaéreos</h3>
+            <p class="text-gray-800 leading-relaxed">
+              Reflectores antiaéreos de luz concentrada y Luz Difusa.<br>
+              De 4000w, 5000w y 8000w.<br>
+              Sistemas con o sin suministro de corriente eléctrica.<br>
+              Móviles o Fijos.
+            </p>
+            <div class="carousel relative mt-6 rounded-lg overflow-hidden">
+              <div class="carousel-inner flex transition-transform duration-500">
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/reflectores1.jpg" alt="Iluminación 1" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/reflectores2.jpg" alt="Iluminación 2" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/reflectores3.jpg" alt="Iluminación 3" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+                
+              </div>
+            </div>
+          </div>
+  
+          <div class="tab-content hidden" id="laser">
+            <h3 class="text-2xl font-semibold text-white mb-4">Espectáculo Laser</h3>
+            <p class="text-gray-800 leading-relaxed">
+              Equipos Laser full color.<br>
+              Proyección de Logotipos o imágenes.<br>
+              Diseños Personalizados.<br>
+              Holográficos de 1w hasta 10w reales.
+            </p>
+            <div class="carousel relative mt-6 rounded-lg overflow-hidden">
+              <div class="carousel-inner flex transition-transform duration-500">
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/laser1.jpg" alt="Iluminación 1" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/laser2.jpg" alt="Iluminación 2" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/laser3.jpg" alt="Iluminación 3" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+                
+              </div>
+            </div>
+          </div>
+  
+          <div class="tab-content hidden" id="cabinas">
+            <h3 class="text-2xl font-semibold text-white mb-4">Cabinas para DJ</h3>
+            <p class="text-gray-800 leading-relaxed">
+              En Madera, Iluminadas, Espejo.<br>
+              Video Pantalla de Leds convencionales o curvas.<br>
+              Escenarios y Escenografías con decoración para DJ.<br>
+              Cubrimos cualquier diseño.
+            </p>
+            <div class="carousel relative mt-6 rounded-lg overflow-hidden">
+              <div class="carousel-inner flex transition-transform duration-500">
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/cabinas_dj1.jpg" alt="Iluminación 1" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/cabinas_dj2.jpg" alt="Iluminación 2" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/cabinas_dj3.png" alt="Iluminación 3" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+                
+              </div>
+            </div>
+          </div>
+  
+          <div class="tab-content hidden" id="audio">
+            <h3 class="text-2xl font-semibold text-white mb-4">Audio</h3>
+            <p class="text-gray-800 leading-relaxed">
+              Sonorizaciones de Grupos Musicales, DJ y Solistas Rider's Nacionales Internacionales.<br>
+              Cubrimos Aforos de hasta 50,000 personas en espacios abiertos.<br>
+              Equipos Lineales y Clústeres en las marcas Líderes del mercado MARTIN AUDIO, D&B, NEXO, L-ACOUSTICS, MEYER SOUND, HK, YORKVILLE y DAS.
+            </p>
+            <div class="carousel relative mt-6 rounded-lg overflow-hidden">
+              <div class="carousel-inner flex transition-transform duration-500">
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/audio1.jpg" alt="Iluminación 1" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/audio2.jpg" alt="Iluminación 2" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/audio3.jpg" alt="Iluminación 3" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+                
+              </div>
+            </div>
+          </div>
+  
+          <div class="tab-content hidden" id="pirotecnia">
+            <h3 class="text-2xl font-semibold text-white mb-4">Pirotecnia en frío y aérea</h3>
+            <p class="text-gray-800 leading-relaxed">
+              Piro Musicales.<br>
+              Detonación inalámbrica computarizada.<br>
+              Diseños personalizados.
+            </p>
+            <div class="carousel relative mt-6 rounded-lg overflow-hidden">
+              <div class="carousel-inner flex transition-transform duration-500">
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/pirotecnia1.jpg" alt="Iluminación 1" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/pirotecnia2.jpg" alt="Iluminación 2" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/pirotecnia3.jpg" alt="Iluminación 3" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+                
+              </div>
+            </div>
+          </div>
+  
+          <div class="tab-content hidden" id="flamas">
+            <h3 class="text-2xl font-semibold text-white mb-4">Flamas y Jet's</h3>
+            <p class="text-gray-800 leading-relaxed">
+              Sistemas de Flamas.<br>
+              Sistemas Jet's para escenarios.<br>
+              Controlados vía DMX.<br>
+              Cubrimos cualquier Diseño.
+            </p>
+            <div class="carousel relative mt-6 rounded-lg overflow-hidden">
+              <div class="carousel-inner flex transition-transform duration-500">
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/flamas_jets1.jpg" alt="Iluminación 1" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/flamas_jets2.jpg" alt="Iluminación 2" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/flamas_jets3.jpg" alt="Iluminación 3" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+                
+              </div>
+            </div>
+          </div>
+  
+          <div class="tab-content hidden" id="confeti">
+            <h3 class="text-2xl font-semibold text-white mb-4">Cañones de confeti</h3>
+            <p class="text-gray-800 leading-relaxed">
+              CO2.<br>
+              Turbina.<br>
+              Piro-Feti.<br>
+              Papel de cualquier color o metálico.
+            </p>
+            <div class="carousel relative mt-6 rounded-lg overflow-hidden">
+              <div class="carousel-inner flex transition-transform duration-500">
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/confeti1.jpg" alt="Iluminación 1" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/confeti2.jpg" alt="Iluminación 2" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/confeti3.jpg" alt="Iluminación 3" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+                
+              </div>
+            </div>
+          </div>
+  
+          <div class="tab-content hidden" id="burbujas">
+            <h3 class="text-2xl font-semibold text-white mb-4">Máquinas de burbujas</h3>
+            <p class="text-gray-800 leading-relaxed">
+              Máquinas con programación por computadora.<br>
+              Líquidos 100% ecológicos y no tóxicos.<br>
+              Diseños para lluvia de burbujas con todos los accesorios.<br>
+              Cubrimos cualquier espectáculo y espacio.
+            </p>
+            <div class="carousel relative mt-6 rounded-lg overflow-hidden">
+              <div class="carousel-inner flex transition-transform duration-500">
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/burbujas1.jpg" alt="Iluminación 1" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/burbujas2.jpg" alt="Iluminación 2" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/burbujas3.jpg" alt="Iluminación 3" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+                
+              </div>
+            </div>
+          </div>
+  
+          <div class="tab-content hidden" id="skydancer">
+            <h3 class="text-2xl font-semibold text-white mb-4">Sky Dancer</h3>
+            <p class="text-gray-800 leading-relaxed">
+              Promocionales de 2 motores.<br>
+              Diferentes diseños.<br>
+              Tubos de todos colores.<br>
+              Cubrimos cualquier diseño.
+            </p>
+            <div class="carousel relative mt-6 rounded-lg overflow-hidden">
+              <div class="carousel-inner flex transition-transform duration-500">
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/skydancer1.jpg" alt="Iluminación 1" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/skydancer2.jpg" alt="Iluminación 2" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/skydancer3.jpg" alt="Iluminación 3" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+                
+              </div>
+            </div>
+          </div>
+  
+          <div class="tab-content hidden" id="espuma">
+            <h3 class="text-2xl font-semibold text-white mb-4">Máquinas y cañones de espuma</h3>
+            <p class="text-gray-800 leading-relaxed">
+              Cañones o Cascadas según diseño.<br>
+              Líquidos 100% ecológicos y no tóxicos.<br>
+              Contamos con todos los accesorios y personal para su operación.<br>
+              Cubrimos cualquier espectáculo y espacio.
+            </p>
+            <div class="carousel relative mt-6 rounded-lg overflow-hidden">
+              <div class="carousel-inner flex transition-transform duration-500">
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/espuma1.jpg" alt="Iluminación 1" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/espuma2.jpg" alt="Iluminación 2" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/espuma3.jpg" alt="Iluminación 3" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+                
+              </div>
+            </div>
+          </div>
+  
+          <div class="tab-content hidden" id="backline">
+            <h3 class="text-2xl font-semibold text-white mb-4">Backline</h3>
+            <p class="text-gray-800 leading-relaxed">
+              Baterías, Percusiones.<br>
+              Teclados, Pianos.<br>
+              Amplificadores de Bajo y Guitarra.<br>
+              Instrumentos de cuerda y viento.
+            </p>
+            <div class="carousel relative mt-6 rounded-lg overflow-hidden">
+              <div class="carousel-inner flex transition-transform duration-500">
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/backline1.jpg" alt="Iluminación 1" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/backline2.jpg" alt="Iluminación 2" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/backline3.jpg" alt="Iluminación 3" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+                
+              </div>
+            </div>
+          </div>
+  
+          <div class="tab-content hidden" id="iluminacion-arq">
+            <h3 class="text-2xl font-semibold text-white mb-4">Iluminación arquitectónica</h3>
+            <p class="text-gray-800 leading-relaxed">
+              Inalámbrica y Alámbrica programable DMX.<br>
+              Iluminación interna de mesas.<br>
+              Iluminación de Centros de mesa.<br>
+              Diseños personalizados.
+            </p>
+            <div class="carousel relative mt-6 rounded-lg overflow-hidden">
+              <div class="carousel-inner flex transition-transform duration-500">
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/iluminacion_puntual1.jpg" alt="Iluminación 1" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/iluminacion_puntual2.jpg" alt="Iluminación 2" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/iluminacion_puntual3.jpg" alt="Iluminación 3" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+                
+              </div>
+            </div>
+          </div>
+  
+          <div class="tab-content hidden" id="iluminacion-negra">
+            <h3 class="text-2xl font-semibold text-white mb-4">Iluminación negra</h3>
+            <p class="text-gray-800 leading-relaxed">
+              Flash Bar y Wash.<br>
+              Sistema DMX.<br>
+              Para interiores y exteriores.<br>
+              Diseños personalizados.
+            </p>
+            <div class="carousel relative mt-6 rounded-lg overflow-hidden">
+              <div class="carousel-inner flex transition-transform duration-500">
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/iluminacion_negra1.jpg" alt="Iluminación 1" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/iluminacion_negra2.jpg" alt="Iluminación 2" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+                <div class="carousel-item w-full shrink-0">
+                  <img src="/img/src/iluminacion_negra3.jpg" alt="Iluminación 3" class="mx-auto max-h-[400px] w-auto object-contain" />
+                </div>
+                
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    
   </section>
-  
-  
+
 
     <!-- Testimonios Section -->
     <section id="testimonios" class="section bg-dark" style="padding: 4rem 0;">
@@ -469,6 +895,7 @@
         
         setInterval(showNextSlide, 2000); // Cambia cada 2 segundos
     </script>
+    
     <script>
         const buttons = document.querySelectorAll('.tab-btn');
         const contents = document.querySelectorAll('.tab-content');
@@ -489,6 +916,18 @@
         // Llamar a la animación al cargar la página
         window.onload = animacionImpactante;
       </script>
+    <script>
+      document.querySelectorAll('.carousel-inner').forEach(carousel => {
+        let index = 0;
+        const slides = carousel.querySelectorAll('.carousel-item');
+        const total = slides.length;
+    
+        setInterval(() => {
+          index = (index + 1) % total;
+          carousel.style.transform = `translateX(-${index * 100}%)`;
+        }, 3000); // cada 3 segundos
+      });
+    </script>
     
 </body>
 </html>
